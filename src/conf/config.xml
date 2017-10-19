@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+	<TC>1</TC>
+
+    <SIP_INFO name="sb">
+        <USER_AGENTS>
+        	<USER_AGENT 
+       			name="simA" 
+		        address="172.22.51.231"
+		        port="5060"
+		        transport="udp"
+		        domain_name="naturaltel.com"
+		        path_name="gov.nist" 
+		        pnp="100"
+		        msisdn="0936010123"
+		        />
+           	<USER_AGENT 
+       			name="simA1" 
+		        address="172.22.51.231"
+		        port="5061"
+		        transport="udp"
+		        domain_name="naturaltel.com"
+		        path_name="gov.nist" 
+		        pnp="101"
+		        msisdn="0936010124"
+		        />
+           	<USER_AGENT 
+       			name="simB" 
+		        address="172.22.51.231"
+		        port="5062"
+		        transport="udp"
+		        domain_name="naturaltel.com"
+		        path_name="gov.nist" 
+		        pnp="101"
+		        msisdn="0912123123"
+		        />
+           	<USER_AGENT 
+       			name="sb" 
+		        address="172.22.51.232"
+		        port="5065"
+		        transport="udp"
+		        domain_name="naturaltel.com"
+		        path_name="gov.nist" 
+		        pnp=""
+		        msisdn=""
+		        />
+           	<USER_AGENT 
+       			name="tester" 
+		        address="192.168.10.28"
+		        port="5063"
+		        transport="udp"
+		        domain_name="naturaltel.com"
+		        path_name="gov.nist" 
+		        pnp=""
+		        msisdn=""
+		        />
+        </USER_AGENTS>
+    </SIP_INFO>
+    
+    <SIPSTACK_PROPERTIES></SIPSTACK_PROPERTIES>
+    
+    <LOG4J_PROPERTIES></LOG4J_PROPERTIES>
+    
+    <DATABASE_INFO
+	    driver_class="com.mysql.jdbc.Driver"
+	    user_id="apuser"
+	    user_password="Naturaltel123!"
+	    connection_url="jdbc:mysql://10.77.20.18:3306/volte_emergency?userUnicode=true"  />
+        
+    <UDP_SERVER_INFO address="172.22.51.232" port="8617" destAddress="172.22.51.232" destPort="8616">
+        <COMMANDS>
+            <ACK>ack</ACK>
+            <PING>ping</PING>
+            <RELOAD_CITY_CELL>reloadCityCell</RELOAD_CITY_CELL>
+        </COMMANDS>
+    </UDP_SERVER_INFO>
+
+</Configuration>
